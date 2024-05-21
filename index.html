@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <nav class="flex text-white bg-black/85 justify-between items-center p-3">
+        <div class="nav-part1">
+          <ul class="flex gap-3 font-bold text-lg">
+            <li>Home</li>
+            <li>Popular</li>
+            <li>Trending</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+        <div id="nav-part2  " class="flex justify-center items-center gap-5">
+          <input class="w-52 h-7" type="search" placeholder=" Search Here!" />
+          <div class="btncart relative">
+            <button class="bg-zinc-600 px-6 py-1 rounded-full">
+              <i class="ri-shopping-cart-fill text-2xl"></i>
+            </button>
+            <div
+              class="cartItems hidden absolute right-0 rounded-xl w-[40vw] h-auto bg-white"
+            >
+              <div class="items flex flex-col gap-4 p-1 text-black"></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="page1">
+        <h1 class="text-9xl m-auto w-full flex justify-center font-semibold italic" >Our Products</h1>
+        <div
+          class="products p-2 flex overflow-auto gap-11 bg-zinc-50 container m-auto"
+        ></div>
+        <h1 class="text-9xl m-auto w-full flex justify-center font-semibold italic p-3" >Popular</h1>
+        <div
+          class="popular p-2 flex overflow-auto gap-11 bg-zinc-50 container m-auto"
+        ></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
